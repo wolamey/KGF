@@ -1,0 +1,134 @@
+.header {
+  width: 100%;
+}
+.header__logo {
+  max-width: 186px;
+}
+.header__mobile {
+  display: none;
+}
+
+.header__desctop {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 50px 0;
+  align-items: center;
+  gap: 100px;
+}
+.header__content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+  gap: 50px;
+}
+.header__links {
+  width: 100%;
+  max-width: 60%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header__link {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-align: left;
+  transition: 0.3s;
+  white-space: nowrap;
+  margin: auto;
+  &:hover {
+    color: #e11b21;
+  }
+}
+.header__phone {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 6px;
+}
+.header__number {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-align: left;
+  white-space: nowrap;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header__get-call {
+  font-size: 16px;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  color: #e11b21;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-decoration: none;
+}
+.header__mobile {
+  display: none;
+}
+.header__mobile-default {
+  width: 90%;
+  margin: auto;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__burger {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@media (max-width: 1600px) {
+  .header__links {
+    max-width: 80%;
+  }
+  .header__logo {
+    max-width: 150px;
+  }
+  .header__desctop {
+    padding: 25px 0;
+  }
+}
+@media (max-width: 1400px) {
+  .header__desctop {
+    gap: 30px;
+  }
+  .header__link,
+  .header__number,
+  .header__get-call {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+  }
+  .header__desctop {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .header__desctop {
+    display: none;
+  }
+  .header__mobile {
+    display: block;
+  }
+}
