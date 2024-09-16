@@ -896,9 +896,13 @@ select:-webkit-autofill:focus {
     gap: 20px;
   }
   .main__title {
-    line-height: 25px;
-    font-size: 22px;
+    line-height: 22px;
+    font-size: 16px;
     text-transform: uppercase;
+  }
+  .main__description {
+    font-weight: 100;
+    font-size: 13px;
   }
   .title {
     font-size: 18px;
@@ -913,6 +917,14 @@ select:-webkit-autofill:focus {
     width: 100%;
     flex-direction: row;
     align-items: center;
+    &:hover {
+      scale: 1.03;
+      box-shadow: 5px 5px 10px 0px #e11b2279;
+      border-radius: 20px;
+    }
+  }
+  .tasks__item-img {
+    max-width: 45px;
   }
   .how-work__wrapper,
   .gallery__wrapper,
@@ -933,5 +945,21 @@ select:-webkit-autofill:focus {
   .gallery__top,
   .how-work__top {
     margin: 0 0 30px 0;
+  }
+  .form__container {
+    width: 90%;
+  }
+  .form__input,
+  .form__input::placeholder {
+    font-size: 16px;
+  }
+  .contact__checkbox input[type='checkbox'] {
+    margin: 0 20px 0 0;
+  }
+  .slider-arrow {
+    width: 30px;
+  }
+  .slider__image {
+    max-width: 70%;
   }
 }

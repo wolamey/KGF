@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
 import './App.scss';
 import Header from '../Components/Header/Header';
 import Home from '../Pages/Home/Home';
+import Cookies from '../Components/Cookies/Cookies';
 import {
   BrowserRouter as Router,
   Route,
@@ -12,7 +14,17 @@ import Privacy from '../Pages/Privacy/Privacy';
 import Terms from '../Pages/Terms/Terms';
 import CookieSettings from '../Pages/CookieSettings/CookieSettings';
 import Footer from '../Components/Footer/Footer';
+
 function App() {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.getElementById(hash.slice(1));
+      if (element) {
+        element.scrollIntoView();
+      }
+    }
+  }, []);
   return (
     <Router>
       <div className="app">
@@ -25,6 +37,7 @@ function App() {
             <Route path="/cookie-settings" element={<CookieSettings />}></Route>
           </Routes>
           <Footer />
+          <Cookies />
         </div>
       </div>
     </Router>

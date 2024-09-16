@@ -67,10 +67,10 @@ export default function Home() {
     },
   ];
   const howWork = [
-    'Бесплатный выезд мастера на объект для оценки работы',
     'Обсуждение работы с заказчиком',
-    'Оформление и подписание договора',
-    'Выполнение работ в соответствии с пожеланиями заказчика',
+    'Составление и оформление договора',
+    'Согласование и подписание договора',
+    'Выполнение работ согласно сроков и стоимости согласно договора',
   ];
   const gallery = [
     {
@@ -305,7 +305,11 @@ export default function Home() {
                 prevSlide();
               }}
             >
-              <img className="arrow__left-img" src={arrow} alt="" />
+              <img
+                className="arrow__left-img slider-arrow"
+                src={arrow}
+                alt=""
+              />
             </button>
             <button
               className="slider__next"
@@ -314,7 +318,7 @@ export default function Home() {
                 nextSlide();
               }}
             >
-              <img className="" src={arrow} alt="" />
+              <img className="slider-arrow" src={arrow} alt="" />
             </button>
           </div>
         )}
@@ -417,7 +421,7 @@ export default function Home() {
               />
               <label className="contact__checkbox">
                 <input required type="checkbox" id="consent" name="consent" />
-                <span>
+                <span className="description">
                   Нажимая на кнопку "Отправить", я даю свое согласие на
                   обработку моих персональных данных для получения обратной
                   связи в соответствии с

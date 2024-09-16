@@ -1,0 +1,76 @@
+.cookie {
+  position: fixed;
+  left: -1000px;
+  bottom: 20px;
+  right: 20px;
+
+  background-color: #000000a1;
+  border: 1px solid #e11b21;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  max-width: 500px;
+  transition: 1s;
+  backdrop-filter: blur(3px);
+  &.active {
+    left: 20px;
+  }
+}
+.cookie__button {
+  display: block;
+  margin: 20px auto 0 auto;
+  cursor: pointer;
+
+  border: 3px solid #e11b21;
+  background: #1c1d1e;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.cookie__button:hover {
+  background-color: #e11b21;
+  scale: 1.1;
+}
+.cookie__text {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+.cookie__regiuslab-link,
+.cookie__privacy-link {
+  color: #e11b21;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+// .cookie__button {
+//   border: 3px solid var(--Yelow, #af7b20);
+//   background: var(--Black, #000000);
+//   padding: 10px 26px;
+//   border-radius: 40px;
+//   width: fit-content;
+//   display: block;
+//   margin: 10px auto 0 auto;
+
+//   font-family: 'Montserrat', sans-serif;
+//   font-size: 20px;
+//   color: #ffffff;
+//   font-weight: 400;
+//   line-height: 24.38px;
+//   text-align: left;
+
+//   align-self: flex-end;
+//   justify-self: center;
+//   cursor: pointer;
+//   transition: 0.3s;
+
+//   text-decoration: none;
+
+//   &:hover {
+//     background: var(--Yelow, #af7b20);
+
+//     font-weight: 600;
+//     color: #000000;
+//   }
+// }
