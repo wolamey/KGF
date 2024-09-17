@@ -46,6 +46,7 @@ import contact3 from '../../assets/contact3.png';
 import contact4 from '../../assets/contact4.png';
 import contact5 from '../../assets/contact5.png';
 import emailjs from 'emailjs-com';
+import SertificateSwiper from '../../Components/SertificateSwiper/SertificateSwiper';
 
 export default function Home() {
   const easyBullits = [
@@ -435,47 +436,11 @@ export default function Home() {
           )}
         </div>
       </div>
-      {/* <div id="form" className="form">
-        <div className="form__filter"></div>
-        <div className="form__container">
-          <p className="form__title title">Форма обратной связи</p>
-          <form className="form__action" onSubmit={handleSubmit}>
-            <input
-              required
-              type="text"
-              name="name" // добавьте имя поля
-              placeholder="Ваше имя"
-              className="form__input"
-            />{' '}
-            <input
-              required
-              type="email"
-              name="email" // добавьте имя поля
-              placeholder="E-mail"
-              className="form__input"
-            />
-            <input
-              required
-              type="tel"
-              name="phone" // добавьте имя поля
-              placeholder="+375 (00) 000-00-00"
-              className="form__input"
-            />
-            <label className="contact__checkbox">
-              <input required type="checkbox" id="consent" name="consent" />
-              <span>
-                Нажимая на кнопку "Отправить", я даю свое согласие на обработку
-                моих персональных данных для получения обратной связи в
-                соответствии с
-                <a className="contact__checkbox-link" href="/privacy">
-                  Политикой обработки персональных данных
-                </a>
-              </span>
-            </label>
-            <input type="submit" className="form__submit" value="Отправить" />
-          </form>
-        </div>
-      </div> */}
+
+      <div className="sertificate">
+        <p className="title serfiticate__title">Наши сертификаты</p>
+        <SertificateSwiper />
+      </div>
     </div>
   );
 }

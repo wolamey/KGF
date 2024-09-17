@@ -1,0 +1,114 @@
+// .init {
+//   &_container {
+//     width: 656px;
+//     height: 496px;
+//     border-radius: 30px;
+//     background: none;
+
+//     &_box {
+//       display: grid;
+//       grid-template-areas:
+//         'photo info'
+//         'rev rev';
+
+//       &_photo {
+//         grid-area: photo;
+//         margin-top: 26px;
+//         margin-left: 36px;
+
+//         img {
+//           border-radius: 50%;
+//           width: 157px;
+//           height: 157px;
+//         }
+//       }
+
+//       &_info {
+//         width: 347px;
+//         height: 107px;
+//         grid-area: info;
+//         margin-top: 26px;
+//         margin-left: 36px;
+//       }
+
+//       &_rev {
+//         border-radius: 30px;
+//         background: #ffffff;
+//         width: 584px;
+//         height: 277px;
+//         grid-area: rev;
+//         text-align: 20px;
+//         margin-left: 26px;
+//         padding: 35.78px 11.93px 11.93px 11.93px;
+//       }
+
+//       &_leave {
+//         color: #324195;
+//         font-size: 32px;
+//         background: #cfe2ff;
+//       }
+//     }
+//   }
+
+//   &_containerLeave {
+//     width: 656px;
+//     height: 496px;
+//     border-radius: 30px;
+//     background: #cfe2ff;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: row;
+//     justify-content: center;
+//   }
+// }
+
+// .swiper {
+//   padding-bottom: 30px;
+// }
+
+// .swiper-button-prev {
+//   width: 44px;
+//   height: 44px;
+//   background-color: #e1ebf9;
+//   left: 600px;
+//   color: #cfe2ff;
+// }
+
+// .swiper-button-next {
+//   width: 44px;
+//   height: 44px;
+//   background: #e1ebf9;
+//   right: 600px;
+// }
+
+// .swiper-slide-prev {
+//   width: 100px;
+// }\
+
+.swiper {
+}
+
+.init_container {
+  padding: 80px 0;
+  //   background-color: rgb(92, 179, 255);
+  margin: auto;
+
+  img {
+    width: 300px;
+    margin: auto;
+    display: block;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red;
+}
+.swiper-pagination-bullet-active-prev,
+.swiper-pagination-bullet-active-next {
+  background-color: aliceblue;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-theme-color: red;
+}
