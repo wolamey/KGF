@@ -638,14 +638,14 @@
 
   padding: 15px 35px;
   text-decoration: none;
+  cursor: pointer;
   transition: 0.3s;
+  width: fit-content;
+  margin: auto;
   &:hover {
     scale: 1.1;
     background: #e11b21;
   }
-  width: fit-content;
-  margin: auto;
-  cursor: pointer;
 }
 
 input:-webkit-autofill,
