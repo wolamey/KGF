@@ -13,6 +13,10 @@ import './SertificateSwiper.scss';
 
 import sertificate1 from '../../assets/sertificate1.png';
 import sertificate2 from '../../assets/sertificate2.png';
+import sertificate3 from '../../assets/sertificate3.png';
+import sertificate4 from '../../assets/sertificate4.png';
+import sertificate5 from '../../assets/sertificate5.png';
+import sertificate6 from '../../assets/sertificate6.png';
 
 export default function SertificateSwiper() {
   const images = [sertificate1, sertificate2];
@@ -21,7 +25,7 @@ export default function SertificateSwiper() {
       effect={'slide'}
       grabCursor={true}
       centeredSlides={true}
-      slidesPerView={1}
+      slidesPerView={window.innerWidth < 1024 ? 1 : 3}
       spaceBetween={30}
       loop={false}
       coverflowEffect={{
@@ -39,10 +43,22 @@ export default function SertificateSwiper() {
       className="mySwiper"
     >
       <SwiperSlide className="init_container">
-        <img src={sertificate1} alt="" />
+        <img src={sertificate6} alt="" />
       </SwiperSlide>
       <SwiperSlide className="init_container">
         <img src={sertificate2} alt="" />
+      </SwiperSlide>
+      <SwiperSlide className="init_container">
+        <img src={sertificate3} alt="" />
+      </SwiperSlide>
+      <SwiperSlide className="init_container">
+        <img src={sertificate4} alt="" />
+      </SwiperSlide>
+      <SwiperSlide className="init_container">
+        <img src={sertificate1} alt="" />
+      </SwiperSlide>
+      <SwiperSlide className="init_container">
+        <img src={sertificate5} alt="" />
       </SwiperSlide>
     </Swiper>
   );
