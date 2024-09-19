@@ -27,7 +27,7 @@ export default function SertificateSwiper() {
       centeredSlides={true}
       slidesPerView={window.innerWidth < 1024 ? 1 : 3}
       spaceBetween={30}
-      loop={false}
+      loop={true}
       coverflowEffect={{
         rotate: 0,
         stretch: 0,
