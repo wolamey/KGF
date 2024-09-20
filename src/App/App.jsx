@@ -35,6 +35,7 @@ function App() {
             <Route path="/privacy" element={<Privacy />}></Route>
             <Route path="/terms" element={<Terms />}></Route>
             <Route path="/cookie-settings" element={<CookieSettings />}></Route>
+            <Route path="/*" element={<Navigate to="/" />} />
           </Routes>
           <Footer />
           <Cookies />

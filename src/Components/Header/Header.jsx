@@ -73,7 +73,7 @@ export default function Header() {
           <div className="header__phone header__mobile-phone">
             <a
               onClick={() => setIsBurgerOpen(false)}
-              href="tel:+375291010355"
+              href="tel:+375296909031"
               className="header__mobile-number"
             >
               +375-29-690-90-31

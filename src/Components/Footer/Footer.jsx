@@ -8,7 +8,7 @@ export default function Footer() {
         <img src={logo} className="footer__logo-img" alt="" />
       </a>
       <div className="footer__column">
-        <a href="tel:+375291010355" className="description footer__link">
+        <a href="tel:+375296909031" className="description footer__link">
           +375-29-690-90-31
         </a>
         <a className="footer__link description" href="mailto:info@kgf.by">
