@@ -69,6 +69,13 @@ export default function Header() {
             >
               Наши заказчики
             </a>
+            <a
+              onClick={() => setIsBurgerOpen(false)}
+              href="/vacancy"
+              className="header__link header__mobile-link"
+            >
+              Вакансии
+            </a>
           </div>
           <div className="header__phone header__mobile-phone">
             <a
@@ -106,6 +113,9 @@ export default function Header() {
             </a>
             <a href="/#customers" className="header__link">
               Наши заказчики
+            </a>
+            <a href="/vacancy" className="header__link">
+              Вакансии
             </a>
           </div>
           <div className="header__phone">

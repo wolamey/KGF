@@ -47,6 +47,7 @@ import contact4 from '../../assets/contact4.png';
 import contact5 from '../../assets/contact5.png';
 import emailjs from 'emailjs-com';
 import SertificateSwiper from '../../Components/SertificateSwiper/SertificateSwiper';
+import Form from '../../Components/Form/Form';
 
 export default function Home() {
   const easyBullits = [
@@ -167,35 +168,6 @@ export default function Home() {
     document.body.style.overflowY = 'auto';
   };
 
-  const [isSubmitted, setIsSubmitted] = useState(false); // Состояние для отслеживания отправки формы
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        'service_lsd2vt7',
-        'template_ptiijui',
-        e.target,
-        'rLgQ3Ae2anwIKnqVj'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setIsSubmitted(true);
-        },
-        (error) => {
-          console.log(error.text);
-          alert('Ошибка при отправке формы, пожалуйста, попробуйте снова.');
-        }
-      );
-
-    e.target.reset(); // Сбрасывает форму после отправки
-  };
-
-  const handleReset = () => {
-    setIsSubmitted(false); // Возвращаемся к исходному состоянию формы
-  };
   return (
     <div className="home">
       <div className="main">
@@ -387,54 +359,8 @@ export default function Home() {
       </div>
       <div id="form" className="form">
         <div className="form__filter"></div>
-        <div className="form__container">
-          {isSubmitted ? (
-            <div className="thank-you-message">
-              <p className="title">Спасибо за вашу заявку!</p>
-              <button className="form__reset-button" onClick={handleReset}>
-                Я хочу отправить еще
-              </button>
-            </div>
-          ) : (
-            <form className="form__action" onSubmit={handleSubmit}>
-              <p className="form__title title">Форма обратной связи</p>
 
-              <input
-                required
-                type="text"
-                name="name"
-                placeholder="Ваше имя"
-                className="form__input"
-              />
-              <input
-                required
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                className="form__input"
-              />
-              <input
-                required
-                type="tel"
-                name="phone"
-                placeholder="+375 (00) 000-00-00"
-                className="form__input"
-              />
-              <label className="contact__checkbox">
-                <input required type="checkbox" id="consent" name="consent" />
-                <span className="description">
-                  Нажимая на кнопку "Отправить", я даю свое согласие на
-                  обработку моих персональных данных для получения обратной
-                  связи в соответствии с
-                  <a className="contact__checkbox-link" href="#">
-                    Политикой обработки персональных данных
-                  </a>
-                </span>
-              </label>
-              <input type="submit" className="form__submit" value="Отправить" />
-            </form>
-          )}
-        </div>
+        <Form type={'Заявка с главной страницы'} />
       </div>
 
       <div className="sertificate">

@@ -14,6 +14,7 @@ import Privacy from '../Pages/Privacy/Privacy';
 import Terms from '../Pages/Terms/Terms';
 import CookieSettings from '../Pages/CookieSettings/CookieSettings';
 import Footer from '../Components/Footer/Footer';
+import Vacancy from '../Pages/Vacancy/Vacancy';
 
 function App() {
   useEffect(() => {
@@ -34,7 +35,8 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/privacy" element={<Privacy />}></Route>
             <Route path="/terms" element={<Terms />}></Route>
-            <Route path="/cookie-settings" element={<CookieSettings />}></Route>
+            <Route path="/cookie-settings" element={<CookieSettings />} />
+            <Route path="vacancy" element={<Vacancy />} />
             <Route path="/*" element={<Navigate to="/" />} />
           </Routes>
           <Footer />

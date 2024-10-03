@@ -1,0 +1,258 @@
+.vacancy {
+  width: 100%;
+}
+
+.vacancy-main {
+  background: url(../../assets/luch4.jpg) no-repeat center;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+}
+.vacancy-main__filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  bottom: 0;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.501);
+}
+.vacancy-main__container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.vacancy-main__button {
+  border: 3px solid #e11b21;
+  background: #1c1d1e;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  &:hover {
+    scale: 1.1;
+    background: #e11b21;
+  }
+}
+
+.vacancy-main__title {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 57px;
+}
+// body {
+//   background-color: black;
+//   opacity: 0.5;
+// }
+
+.vacancy-list {
+  width: 80%;
+  padding: 100px 0;
+  margin: auto;
+}
+
+.vacancy-list__title {
+  text-align: center;
+}
+
+.vacancy-list__wrapper {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+}
+
+.vacancy-list__item {
+  padding: 30px;
+  border: #e11b21 4px solid;
+  background-color: #1c1d1e;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  transition: 0.3s;
+  max-width: 752px;
+
+  width: 100%;
+  &:hover {
+    scale: 1.02;
+    box-shadow: 10px 10px 20px 0px #e11b2279;
+  }
+}
+.vacancy-list__item-name {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 26px;
+  margin: 0 0 30px 0;
+}
+
+.vacancy-list__item-title {
+  color: #e11b21;
+  margin: 0 0 10px 0;
+}
+
+.vacancy-list__item-must-list {
+  padding: 0 0 0 20px;
+}
+
+.vacancy-list__item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.vacancy-list__button {
+  border: 3px solid #e11b21;
+  background: #1c1d1e;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    scale: 1.1;
+    background: #e11b21;
+  }
+}
+
+.vacancy-list__item-salary-num {
+  font-weight: 900;
+  font-size: 30px;
+  color: #e11b21;
+  margin: 0 7px;
+  text-decoration: underline;
+}
+
+.vacancy__form-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000096;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.vacancy__form {
+  background-color: black;
+  border: 3px solid #e11b21;
+  box-shadow: 0px 0px 20px 0px #e11b2279;
+  position: relative;
+  width: 60%;
+  padding: 40px;
+  //   .form__container {
+  //     width: 100%;
+  //   }
+}
+.vacancy__form-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  transition: 0.3s;
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+@media (max-width: 1600px) {
+  .vacancy-main__title {
+    line-height: 40px;
+    font-size: 35px;
+  }
+}
+@media (max-width: 1440px) {
+  .form__reset-button {
+    margin: 30px 0 0 0;
+    border: 3px solid #e11b21;
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .vacancy-main__title {
+    line-height: 29px;
+    font-size: 28px;
+  }
+  .form__container {
+    width: 60%;
+  }
+  .vacancy-main__description {
+    font-size: 14px;
+  }
+  .vacancy-list__item-name {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .vacancy__form {
+    width: 80%;
+  }
+  .vacancy-main,
+  .vacancy-list {
+    padding: 60px 0;
+  }
+  .vacancy-main__container {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .vacancy__form {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .contact__checkbox {
+    padding: 20px 0;
+  }
+  .form__container {
+    width: 90%;
+  }
+  .form__input,
+  .form__input::placeholder {
+    font-size: 16px;
+  }
+  .vacancy-main__title {
+    line-height: 22px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .vacancy-list__item {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .vacancy__form-close {
+    width: 20px;
+  }
+  .vacancy__form {
+    .form__input {
+      padding: 10px;
+    }
+    .description {
+      font-size: 12px;
+    }
+    .contact__checkbox input[type='checkbox'] {
+      margin: 0 10px 0 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
