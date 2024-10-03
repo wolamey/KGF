@@ -40,6 +40,7 @@ import customer4 from '../../assets/customer4.png';
 import customer5 from '../../assets/customer5.png';
 import customer6 from '../../assets/customer6.png';
 import customer7 from '../../assets/customer7.png';
+import customer8 from '../../assets/customer8.png';
 import contact1 from '../../assets/contact1.png';
 import contact2 from '../../assets/contact2.png';
 import contact3 from '../../assets/contact3.png';
@@ -117,6 +118,7 @@ export default function Home() {
     customer5,
     customer6,
     customer7,
+    customer8,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
