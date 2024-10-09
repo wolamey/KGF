@@ -18,8 +18,8 @@ import sertificate4 from '../../assets/sertificate4.png';
 import sertificate5 from '../../assets/sertificate5.png';
 import sertificate6 from '../../assets/sertificate6.png';
 
-// Установить стили для react-modal
-Modal.setAppElement('#root'); // Это важно для лучшего взаимодействия с экранными читалками и для устранения предупреждений
+
+Modal.setAppElement('#root'); 
 
 export default function SertificateSwiper() {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,14 +69,13 @@ export default function SertificateSwiper() {
           <SwiperSlide
             key={index}
             className="init_container"
-            onClick={() => openModal(index)}  // Открываем модалку при клике
+            onClick={() => openModal(index)}  
           >
             <img src={image} alt={`sertificate${index + 1}`} />
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* Модальное окно с полноэкранным слайдером */}
       <Modal
         isOpen={isOpen}
         onRequestClose={closeModal}
