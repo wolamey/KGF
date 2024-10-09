@@ -32,7 +32,7 @@ export default function Footer() {
       <div className="footer__column">
         <p className="footer__item description">ООО « КГ Фасады »</p>
         <p className="footer__item description">УНП 192597674</p>
-        <a href="https://regiuslab.by/?utm_source=kgfby...s_projects">Разработка и дизайн - RegiusLab</a>
+        <a href="https://regiuslab.by/?utm_source=kgfby&utm_medium=footer_link&utm_campaign=from_clients_projects">Разработка и дизайн - RegiusLab</a>
       </div>
     </footer>
   );
