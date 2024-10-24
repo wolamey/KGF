@@ -46,6 +46,26 @@ import contact2 from '../../assets/contact2.png';
 import contact3 from '../../assets/contact3.png';
 import contact4 from '../../assets/contact4.png';
 import contact5 from '../../assets/contact5.png';
+
+import parkland1 from '../../assets/Parkland1.jpg'
+import parkland2 from '../../assets/Parkland2.jpg'
+import parkland3 from '../../assets/Parkland3.jpg'
+import parkland4 from '../../assets/Parkland4.jpg'
+import parkland5 from '../../assets/Parkland5.jpg'
+import parkland6 from '../../assets/Parkland6.jpg'
+import parkland7 from '../../assets/Parkland7.jpg'
+import parkland8 from '../../assets/Parkland8.jpg'
+
+
+import club1 from '../../assets/club1.jpg'
+import club2 from '../../assets/club2.jpg'
+import club3 from '../../assets/club3.jpg'
+import club4 from '../../assets/club4.jpg'
+import club5 from '../../assets/club5.jpg'
+import club6 from '../../assets/club6.jpg'
+import club7 from '../../assets/club7.jpg'
+
+
 import emailjs from 'emailjs-com';
 import SertificateSwiper from '../../Components/SertificateSwiper/SertificateSwiper';
 import Form from '../../Components/Form/Form';
@@ -108,6 +128,15 @@ export default function Home() {
         development5,
       ],
     },
+    {
+      name: 'Северный берег - дом Parkland 4',
+      images:[parkland1,parkland2,parkland3,parkland4,parkland5,parkland6,parkland7,parkland8]
+    },
+    {
+      name: 'Северный берег - клуб жильцов ',
+      images:[club1,club2,club3,club4,club5,club6,club7]
+
+    }
   ];
 
   const customers = [
